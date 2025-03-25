@@ -107,6 +107,9 @@ wheels = [
 name = "python-example-app"
 version = "0.1.0"
 source = { editable = "." }
+dependencies = [
+    { name = "pytest-cov" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -116,6 +119,7 @@ dev = [
 ]
 
 [package.metadata]
+requires-dist = [{ name = "pytest-cov", specifier = ">=5.0.0" }]
 
 [package.metadata.requires-dev]
 dev = [
